@@ -3,7 +3,7 @@
 
   Turns arbitrary binary data into a CommonJS compatible module.
 
-So this:
+So this random `test.jpg` image:
 
 ![](test.jpg)
 
