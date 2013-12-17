@@ -1,0 +1,31 @@
+{
+  "name": "require-blob",
+  "version": "0.0.1",
+  "description": "Turns arbitrary binary data into a CommonJS compatible module",
+  "main": "index.js",
+  "bin": "bin/require-blob",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/require-blob.git"
+  },
+  "keywords": [
+    "require",
+    "commonjs",
+    "blob",
+    "data",
+    "uri",
+    "binary"
+  ],
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TooTallNate/require-blob/issues"
+  },
+  "homepage": "https://github.com/TooTallNate/require-blob",
+  "dependencies": {
+    "mime": "~1.2.11"
+  }
+}
