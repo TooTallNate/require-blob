@@ -3,7 +3,14 @@
   "repo": "TooTallNate/require-blob",
   "description": "Turns arbitrary binary data into a CommonJS compatible module",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": [
+    "require",
+    "commonjs",
+    "blob",
+    "data",
+    "uri",
+    "binary"
+  ],
   "dependencies": {},
   "development": {},
   "license": "MIT",
