@@ -6,7 +6,8 @@
 module.exports = requireBlob;
 
 /**
- * Turns arbitrary binary data into a CommonJS compatible module.
+ * Turns arbitrary binary data into Data URI string that gets exported
+ * as a CommonJS-compatible module.
  *
  * @param {Buffer} buf
  * @param {String} mime
