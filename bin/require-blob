@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var program = require('commander');
+var requireBlob = require('../');
+
+program
+  .version(require('../package').version)
+  .option('-m, --mime [mime]', 'Mime type to output with the')
+  .option('-f, --file [file]')
+  .parse(process.argv);
+
+var filename = program.file || program.args[0];
+var mime = program.mime;
+if (!mime && filename) {
+  mime = require('mime').lookup(filename);
+}
+
+var stream = !filename ? process.stdin : fs.createReadStream(filename);
+
+var data = [];
+stream.on('data', function (b) {
+  data.push(b);
+});
+stream.on('end', function () {
+  var js = requireBlob(Buffer.concat(data), mime);
+  console.log(js);
+});
