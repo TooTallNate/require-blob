@@ -1,6 +1,6 @@
 {
   "name": "require-blob",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Turns arbitrary binary data into a CommonJS compatible module",
   "main": "index.js",
   "bin": "bin/require-blob",
