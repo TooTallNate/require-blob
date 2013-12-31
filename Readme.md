@@ -3,9 +3,9 @@
 
   Turns arbitrary binary data into a CommonJS compatible module.
 
-So this random `test.jpg` image:
+So this random `test.png` image:
 
-![](test.jpg)
+![](test.png)
 
 Turns into this:
 
